@@ -1,11 +1,29 @@
 <?php
-/*
-* Plugin Name: MailSender
-* Author: Mukesh Choudhari
-* Author URI: https://mukeshc.wisdmlabs.net
-* Description: Posts summary on Admin Mail at End of the Day
-* Text Domain: maildesk
-*/
+
+/**
+ * The plugin bootstrap file
+ *
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
+ *
+ * @link              https://mukesh.com
+ * @since             1.0.0
+ * @package           Mailsender
+ *
+ * @wordpress-plugin
+ * Plugin Name:       mailsender
+ * Plugin URI:        https://mymailsender.com
+ * Description:       This plugin sends daily mail reminder
+ * Version:           1.0.0
+ * Author:            Mukesh
+ * Author URI:        https://mukesh.com
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       mailsender
+ * Domain Path:       /languages
+ */
 
 add_action('wp', 'schedule_daily_post_summary');
 
